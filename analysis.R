@@ -1,4 +1,5 @@
 #Assignment 9 by Shira Zadok ID 318958311
+library(dplyr)
 
 #### Creating data file ----
 #N is not set:
@@ -13,3 +14,6 @@ df <- data.frame(subject, age, gender, rt, depression, sleep_duration)
 
 #save
 save(df, file = "./df.rdata")
+
+source("functions.R")
+results <- create_df(df,x,y)
